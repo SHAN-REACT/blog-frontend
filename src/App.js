@@ -8,14 +8,26 @@ class App extends Component {
       <div className="container">
         <div className="blog-header">
           <h1 className="blog-title">Shan's Blog</h1>
-          <p className="lead blog-description">Your personal blogger.</p>
+          <div className="lead blog-description">
+          <div className="dropdown">
+            <button className="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Sort by
+            <span className="caret"></span></button>
+            <ul className="dropdown-menu">
+              <li><a href="#">VoteScore</a></li>
+              <li><a href="#">Date</a></li>
+            </ul>
+            &nbsp;
+            <button className="btn btn-primary">Create a New Post</button>
+          </div>
+          </div>
         </div>
         <div className="row">
 
           <div className="col-sm-8 blog-main">
             <div className="blog-post">
-              <h2 className="blog-post-title">Blog#1 <span className="badge text-primary">2</span> <span className="fa fa-thumbs-up blog-post-icon text-primary" aria-hidden="true"> 
-                </span> <span className="fa fa-thumbs-down blog-post-icon" aria-hidden="true"></span></h2>
+              <h2 className="blog-post-title">Blog#1 <button className="btn btn-primary"><span className="badge">2</span></button>
+               &nbsp;<span className="fa fa-fw fa-thumbs-up blog-post-icon text-primary" aria-hidden="true"></span>
+               &nbsp;<span className="fa fa-fw fa-thumbs-down blog-post-icon" aria-hidden="true"></span></h2>
               <p className="blog-post-meta">Jan 1 2017 by <a href="#">Shan</a></p>
               <p>
                 Content....
@@ -25,8 +37,9 @@ class App extends Component {
             </div>
 
             <div className="blog-post">
-              <h2 className="blog-post-title">Blog#2 <span className="fa fa-thumbs-up blog-post-icon" aria-hidden="true"> 
-                </span> <span className="fa fa-thumbs-down blog-post-icon text-primary" aria-hidden="true"></span></h2>
+              <h2 className="blog-post-title">Blog#2 <button className="btn btn-primary"><span className="badge">1</span></button>
+              &nbsp;<span className="fa fa-fw fa-thumbs-up blog-post-icon " aria-hidden="true"></span>
+              &nbsp;<span className="fa fa-fw fa-thumbs-down blog-post-icon text-primary" aria-hidden="true"></span></h2>
               <p className="blog-post-meta">Dec 31 2016 by <a href="#">Shan</a></p>
               <p>
                 Content....
@@ -34,9 +47,9 @@ class App extends Component {
             </div>
 
             <div className="blog-post">
-              <h2 className="blog-post-title">Blog#3 <span className="fa fa-thumbs-up blog-post-icon" aria-hidden="true"> 
-                </span> <span className="fa fa-thumbs-down blog-post-icon" aria-hidden="true"></span></h2>
-              <p className="blog-post-meta">Dec 25 2016 by <a href="#">Raj</a></p>
+              <h2 className="blog-post-title">Blog#3 <button className="btn btn-primary"><span className="badge">3</span></button>
+              &nbsp;<span className="fa fa-fw fa-thumbs-up blog-post-icon " aria-hidden="true"></span>
+              &nbsp;<span className="fa fa-fw fa-thumbs-down blog-post-icon " aria-hidden="true"></span></h2>
               <p>
                 Content....
               </p>
